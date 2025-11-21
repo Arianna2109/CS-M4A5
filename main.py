@@ -13,12 +13,24 @@ answer = (str((a-b)+(a*b)))
 print("Your answer is: "+str(answer))
 
 #3rd part
-Print("Which picture would you like to see? Option 1 or 2?")
-If = 1
-Else:
-print(" /\ _ /\ ")
-print("( 0 . 0 )")
-print("  > ^ <")
+choice = input ("Which picture would you like to see? (1 or 2): ")
 
-If = 2
-Else:
+ascii1 = r"""
+ /\ _ /\
+( 0 . 0 ) 
+  > ^ <
+"""
+
+ascii2 = r"""
+ ( \_/ )
+(=' .'=)
+("")_("")
+"""
+
+if choice == "1":
+    print(ascii1)
+elif choice == "2":
+    print(ascii2)
+
+else:
+    print("Invalid choice. Please enter 1 or 2")
